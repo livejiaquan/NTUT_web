@@ -307,3 +307,20 @@ footer ul{
         max-width: 80px; /* 自定义适当的宽度 */
     }
 }
+
+/* 添加媒体查询以适应小屏幕设备 */
+@media (max-width: 576px) {
+.jumbotron {
+	padding-top: 50px; /* 调整上边距以避免内容被切掉 */
+	padding-bottom: 50px; /* 调整下边距以避免内容被切掉 */
+}
+.jumbotron h1.display-4 {
+	font-size: 28px; /* 调整标题字体大小以适应小屏幕 */
+}
+.jumbotron p.lead {
+	font-size: 16px; /* 调整段落字体大小以适应小屏幕 */
+}
+.jumbotron a.btn {
+	font-size: 16px; /* 调整按钮字体大小以适应小屏幕 */
+}
+}
