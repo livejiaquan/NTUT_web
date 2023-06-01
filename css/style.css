@@ -296,4 +296,14 @@ footer ul{
 	height: 300px; /* 调整为您想要的高度 */
 	object-fit: cover;
   }
-  
+  .logo {
+    max-width: 100%; /* 保持图片宽度不超过容器宽度 */
+    height: auto; /* 根据宽度等比例缩放高度 */
+}
+
+/* 在指定屏幕尺寸下设置 logo 大小 */
+@media (max-width: 768px) { /* 适用于小型设备，例如平板和手机 */
+    .logo {
+        max-width: 80px; /* 自定义适当的宽度 */
+    }
+}
