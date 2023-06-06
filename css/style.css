@@ -282,7 +282,11 @@ footer ul{
 	}
 }
 .custom-margin {
-    margin-bottom: 25px; /* 調整區塊之間的下方間距 */
+    margin-bottom: 30px; /* 調整區塊之間的下方間距 */
+}
+.custom-margin-last{
+	margin-bottom: 30px; /* 調整區塊之間的下方間距 */
+	margin-top: 30px;
 }
 .center-vertical {
     display: flex;
@@ -324,3 +328,13 @@ footer ul{
 	font-size: 16px; /* 调整按钮字体大小以适应小屏幕 */
 }
 }
+
+.shared-bg {
+	background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('../pictures/freewifi.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	height: 100vh; /* 可根据需要调整高度 */
+  }
+  
+  
