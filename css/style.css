@@ -45,7 +45,7 @@ nav li{
 	font-size: 32px;
 }
 #second img{
-	border-radius: 100%;
+	/* border-radius: 100%; */
     width: 108px;
 }
 #second h5{

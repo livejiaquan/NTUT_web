@@ -18,3 +18,6 @@ window.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+function showAlert() {
+  alert("這個是假的,不過還是謝謝你的支持");
+}
