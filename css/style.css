@@ -4,6 +4,9 @@ h1,h2,h3,h4,h5,h6{
 p,a,span,li,label{
 	font-family: 'Open Sans', sans-serif;
 }
+html{
+	scroll-behavior: smooth;
+}
 img{
 	max-width:100%;
 }
@@ -180,7 +183,7 @@ footer ul{
 	height: 400px;
 }
 #singlecontent{
-	padding: 80 0px;
+	padding: 80px 0;
 }
 .thetag{
 	color: #f05f5c;
@@ -336,5 +339,4 @@ footer ul{
 	background-position: 50%;
 	height: 100vh; /* 可根据需要调整高度 */
   }
-  
   

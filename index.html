@@ -9,7 +9,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script src="https://kit.fontawesome.com/68f8681dba.js" crossorigin="anonymous"></script>
-		<script src="js/script.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="css/style.css">
 		<title>資訊安全宣導網站</title>
@@ -19,7 +18,7 @@
 		<header>
 			<div class="container">
 				<nav class="navbar navbar-expand-lg navbar-light">
-					<a class="navbar-brand" href="index.html"><img src="pictures/ntut.jpeg" width="120" class="logo"></a>
+					<a class="navbar-brand" href="index.html"><img src="pictures/ntut.jpeg" width="120" class="logo" alt="國立臺北科技大學校徽"></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -54,7 +53,7 @@
 						  <h1 class="display-4">公共Wi-Fi：請勿隨便連！</h1>
 						  <h1 class="display-4">資安小心機大揭密</h1>
 						  <p class="lead">提升大眾資訊安全概念 由你我做起 !</p>
-						  <a class="btn btn-primary btn-lg" href="#third" role="button" onclick="smoothScrollTo('#third')">宣導影片</a>
+						  <a class="btn btn-primary btn-lg" href="#third" role="button" data-scroll-target="#third">宣導影片</a>
 					  </div>
 				  </div>
 			  </div>
@@ -68,9 +67,9 @@
 						<h3>使用公用Wi-Fi注意事項</h3>
 					</div>
 					<div class='col-md-6 text-center custom-margin'>
-					  	<div class='row'>
-						  	<div class='col-md-4 '>
-							  	<img src='pictures/https.png'>
+						  	<div class='row'>
+							  	<div class='col-md-4 '>
+								  	<img src='pictures/https.png' alt='提醒使用 HTTPS 網站的圖示'>
 							  	<!-- <h5>資安工程師</h5> -->
 						  	</div>
 						  	<div class='col-md-8 text-left'>
@@ -80,9 +79,9 @@
 					  	</div>
 					</div>
 					<div class='col-md-6 text-center custom-margin'>
-						<div class='row'>
-							<div class='col-md-4 '>
-								<img src='pictures/bank.png'>
+							  	<div class='row'>
+								  	<div class='col-md-4 '>
+									<img src='pictures/bank.png' alt='網路銀行提醒圖示'>
 								<!-- <h5>資安工程師</h5> -->
 							</div>
 							<div class='col-md-8 text-left'>
@@ -91,10 +90,10 @@
 							</div>
 						</div>
 				 	</div>
-				  	<div class='col-md-6 text-center custom-margin'>
+				  		<div class='col-md-6 text-center custom-margin'>
 						<div class='row'>
 							<div class='col-md-4 '>
-								<img src='pictures/wifi.png'>
+								<img src='pictures/wifi.png' alt='安全 Wi-Fi 圖示'>
 								<!-- <h5>資安工程師</h5> -->
 							</div>
 							<div class='col-md-8 text-left'>
@@ -106,7 +105,7 @@
 			  		<div class='col-md-6 text-center custom-margin'>
 						<div class='row'>
 							<div class='col-md-4 '>
-								<img src='pictures/smartphone.png'>
+								<img src='pictures/smartphone.png' alt='智慧型手機注意事項圖示'>
 								<!-- <h5>資安工程師</h5> -->
 							</div>
 							<div class='col-md-8 text-left'>
@@ -118,7 +117,7 @@
 					<div class='col-md-6 text-center custom-margin'>
 						<div class='row'>
 							<div class='col-md-4 '>
-								<img src='pictures/no-signal.png'>
+								<img src='pictures/no-signal.png' alt='停用自動連線圖示'>
 								<!-- <h5>資安工程師</h5> -->
 							</div>
 							<div class='col-md-8 text-left'>
@@ -130,7 +129,7 @@
 					<div class='col-md-6 text-center custom-margin'>
 						<div class='row'>
 							<div class='col-md-4 '>
-								<img src='pictures/fake.png'>
+								<img src='pictures/fake.png' alt='警惕偽造 Wi-Fi 圖示'>
 								<!-- <h5>資安工程師</h5> -->
 							</div>
 							<div class='col-md-8 text-left'>
@@ -142,7 +141,7 @@
 					<div class='col-md-12 text-center custom-margin-last'>
 						<div class='row'>
 							<div class='col-md-2 '>
-								<img src='pictures/vpn.png'>
+								<img src='pictures/vpn.png' alt='VPN 使用示意圖'>
 								<!-- <h5>資安工程師</h5> -->
 							</div>
 							<div class='col-md-10 text-left'>
@@ -167,7 +166,7 @@
 			  <div class="row">
 				<div class="col-md-12 text-center">
 					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Hfh0lGZtU3w" allowfullscreen></iframe>
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Hfh0lGZtU3w" allowfullscreen title="公共 Wi-Fi 資訊安全宣導影片"></iframe>
 					  </div>
 				</div>
 			  </div>
@@ -196,7 +195,7 @@
 							  	<div class='outer'>
 								  	<a href='https://news.ltn.com.tw/news/world/breakingnews/2345017' target="_blank">
 									  	<div class='upper'>
-											<img src='https://img.ltn.com.tw/Upload/news/600/2018/02/20/phpCMUpmd.jpg' class='news-image'>
+											<img src='https://img.ltn.com.tw/Upload/news/600/2018/02/20/phpCMUpmd.jpg' class='news-image' alt='2018 年公共 Wi-Fi 盜領新聞圖片'>
 											<div class='innertext'>
 												<!-- <span>新聞</span> -->
 												<!-- <h4>新聞</h4> -->
@@ -214,7 +213,7 @@
 							  	<div class='outer'>
 								  	<a href='https://news.cts.com.tw/cts/general/202210/202210052094520.html' target="_blank">
 									  	<div class='upper'>
-											<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVQdRs01TtNzBzZfBzIgIauxrh_RtpTVe7fw&usqp=CAU' class='news-image'>
+											<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVQdRs01TtNzBzZfBzIgIauxrh_RtpTVe7fw&usqp=CAU' class='news-image' alt='免費 Wi-Fi 資安新聞圖片'>
 											<div class='innertext'>
 												<!-- <span>查看新聞</span> -->
 												<!-- <h4>新聞</h4> -->
@@ -233,7 +232,7 @@
 							  	<div class='outer'>
 								  	<a href='https://news.tvbs.com.tw/life/652367' target="_blank">
 									  	<div class='upper'>
-											<img src='https://cc.tvbs.com.tw/news3.0/tvbs/news/life/images/2016/05/04/CH55_Clean_10M_20160504_18-30-01.mp4_20160504_184703.212.jpg' class='news-image'>
+											<img src='https://cc.tvbs.com.tw/news3.0/tvbs/news/life/images/2016/05/04/CH55_Clean_10M_20160504_18-30-01.mp4_20160504_184703.212.jpg' class='news-image' alt='2016 年免費 Wi-Fi 資安新聞圖片'>
 											<div class='innertext'>
 												<!-- <span>查看新聞</span> -->
 												<!-- <h4>新聞</h4> -->
@@ -267,7 +266,7 @@
 						  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="感謝您的支持">
 						</div>
 						<!-- <a class="btn btn-primary btn-lg" href="#" role="button">提交</a> -->
-						<a class="btn btn-primary btn-lg" href="#" role="button" onclick="showAlert()">提交</a>
+						<a class="btn btn-primary btn-lg" href="#" role="button" data-feedback-button>提交</a>
 					  </div>
 		        </div>
 	        </div>
@@ -278,7 +277,7 @@
 	        <div class="container">
 		        <div class='row'>
 					  <div class='col-md-4 text-left'>
-						  <img src='pictures/ntut.jpeg' width='85'>
+					  <img src='pictures/ntut.jpeg' width='85' alt='國立臺北科技大學校徽'>
 						  <p>國立臺北科技大學</p>
 						  <p>National Taipei University Of Technology</p>
 					  </div>

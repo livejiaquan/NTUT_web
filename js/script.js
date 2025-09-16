@@ -1,23 +1,37 @@
-window.addEventListener('DOMContentLoaded', function() {
-    function smoothScrollTo(target) {
-      const element = document.querySelector(target);
-      if (element) {
-        const offset = 140; // Adjust this value to set the desired scroll offset
-        window.scrollTo({
-          behavior: "smooth",
-          top: element.offsetTop - offset
-        });
-      }
+window.addEventListener('DOMContentLoaded', () => {
+  const smoothScrollTo = (targetSelector) => {
+    const element = document.querySelector(targetSelector);
+    if (!element) {
+      return;
     }
-  
-    // Example usage
-    const button = document.querySelector('.btn');
-    button.addEventListener('click', function(event) {
+
+    const headerOffset = 120;
+    const targetPosition = element.getBoundingClientRect().top + window.pageYOffset;
+    const scrollPosition = Math.max(targetPosition - headerOffset, 0);
+
+    window.scrollTo({
+      behavior: 'smooth',
+      top: scrollPosition
+    });
+  };
+
+  document.querySelectorAll('[data-scroll-target]').forEach((trigger) => {
+    trigger.addEventListener('click', (event) => {
+      const { scrollTarget } = trigger.dataset;
+      if (!scrollTarget) {
+        return;
+      }
+
       event.preventDefault();
-      smoothScrollTo('#third');
+      smoothScrollTo(scrollTarget);
     });
   });
-  
-function showAlert() {
-  alert("這個是假的,不過還是謝謝你的支持");
-}
+
+  const feedbackButton = document.querySelector('[data-feedback-button]');
+  if (feedbackButton) {
+    feedbackButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      alert('這個是假的,不過還是謝謝你的支持');
+    });
+  }
+});
