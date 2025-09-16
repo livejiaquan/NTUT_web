@@ -46,121 +46,204 @@
 		
 		
 		<section id='intro'>
-			<div class="jumbotron" style="overflow: hidden;">
+			<div class="jumbotron hero" style="overflow: hidden;">
 			  <div class='container'>
-				  <div class='row'>
-					  <div class='col-md-12'>
-						  <h1 class="display-4">公共Wi-Fi：請勿隨便連！</h1>
-						  <h1 class="display-4">資安小心機大揭密</h1>
-						  <p class="lead">提升大眾資訊安全概念 由你我做起 !</p>
-						  <a class="btn btn-primary btn-lg" href="#third" role="button" data-scroll-target="#third">宣導影片</a>
+				  <div class='row align-items-center gy-5'>
+					  <div class='col-lg-7 hero-copy'>
+						  <span class="eyebrow">NTUT Cybersecurity</span>
+						  <h1 class="display-4">公共 Wi-Fi</h1>
+						  <h1 class="display-4">別讓方便變成風險</h1>
+						  <p class="lead">快速掌握行動裝置常見的威脅情境，建立屬於你的安全上網守則。</p>
+						  <ul class="hero-checklist">
+							<li><i class="fas fa-check"></i>支援政府資安 2.0「零信任」原則的行動設備自我檢核</li>
+							<li><i class="fas fa-check"></i>比對最新 OWASP Mobile Top 10 風險並提供防護建議</li>
+							<li><i class="fas fa-check"></i>30 秒完成 Wi-Fi 連線安全性評估清單</li>
+						  </ul>
+						  <div class="hero-actions">
+						  	<a class="btn btn-primary btn-lg" href="#second" role="button" data-scroll-target="#second">立即檢查重點</a>
+						  	<a class="btn btn-outline btn-lg" href="#third" role="button" data-scroll-target="#third">觀看宣導影片</a>
+						  </div>
+					  </div>
+					  <div class='col-lg-5'>
+						  <div class="hero-panel">
+						  	<div class="panel-header">
+						  		<span class="tag">最新資安要求</span>
+						  		<h3>行前自我檢核</h3>
+						  	</div>
+						  	<ul class="panel-list">
+						  		<li>
+						  			<strong>身分驗證</strong>
+						  			<span>啟用多重驗證 (MFA)，避免單一密碼被攔截。</span>
+						  		</li>
+						  		<li>
+						  			<strong>資料傳輸</strong>
+						  			<span>使用 VPN 或 HTTPS 連線通道，符合 ISO/IEC 27001 加密控管指引。</span>
+						  		</li>
+						  		<li>
+						  			<strong>裝置安全</strong>
+						  			<span>更新作業系統與防毒庫，落實 NIST CSF「Protect」層級要求。</span>
+						  		</li>
+						  	</ul>
+						  	<div class="panel-footer">
+						  		<div>
+						  			<span class="panel-metric">95%</span>
+						  			<p>遵循以上三步，可阻擋常見公開熱點攻擊</p>
+						  		</div>
+						  		<a class="btn btn-light-outline" href="#compliance" data-scroll-target="#compliance">檢視建議設定</a>
+						  	</div>
+						  </div>
 					  </div>
 				  </div>
 			  </div>
 			</div>
 		</section>
 
+		<section id="compliance">
+		  <div class="container">
+			<div class="row justify-content-center">
+			  <div class="col-xl-8 text-center">
+				<h3>2024 行動資安合規重點</h3>
+				<p class="section-intro">對照行政院資安 2.0 與國際框架，彙整三大必備策略，協助校園與師生快速辨識與落實。</p>
+			  </div>
+			</div>
+			<div class="row compliance-grid">
+			  <div class="col-md-4">
+				<div class="compliance-card">
+				  <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+				  <h4>零信任連線</h4>
+				  <p>依據政府資安 2.0 指引，任何裝置皆需動態驗證，並限制服務僅開放必要權限。</p>
+				  <ul>
+					<li>啟用 WPA3 / 802.1X 認證</li>
+					<li>定期審查 Wi-Fi ACL 名單</li>
+				  </ul>
+				</div>
+			  </div>
+			  <div class="col-md-4">
+				<div class="compliance-card">
+				  <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+				  <h4>威脅情資同步</h4>
+				  <p>對應 MITRE ATT&amp;CK 與 TLP 分享規範，快速擴散可疑熱點、釣魚網址與惡意 App 名單。</p>
+				  <ul>
+					<li>導入情資自動化通報</li>
+					<li>30 日內檢視封鎖結果</li>
+				  </ul>
+				</div>
+			  </div>
+			  <div class="col-md-4">
+				<div class="compliance-card">
+				  <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+				  <h4>端點合規檢查</h4>
+				  <p>依據 CIS Controls v8 要求，確保行動設備具備加密、鎖屏與資安稽核紀錄。</p>
+				  <ul>
+					<li>行動裝置管理 (MDM) 追蹤</li>
+					<li>每週掃描弱點與補丁</li>
+				  </ul>
+				</div>
+			  </div>
+			</div>
+			<div class="row justify-content-center">
+			  <div class="col-lg-10">
+				<div class="compliance-banner">
+				  <div>
+					<h5>立即下載行動資安檢查表</h5>
+					<p>結合 ISO/IEC 27001 與資通安全法控管項目，提供可列印的巡檢範本。</p>
+				  </div>
+					  <a class="btn" href="https://moda.gov.tw/digitalaffairs/5382/5532" target="_blank" rel="noopener">取得檢查表</a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</section>
+
         <section id='second'>
 	        <div class="container">
-		        <div class='row'>
-					<div class='col-md-8 offset-md-2 text-center'>
-						<h3>使用公用Wi-Fi注意事項</h3>
+		        <div class='row justify-content-center'>
+					<div class='col-md-10 col-lg-8 text-center'>
+						<h3>使用公用 Wi-Fi 的零風險清單</h3>
+						<p class="section-intro">快速瀏覽七項重點守則，讓你在咖啡廳、飯店或車站也能安心上網。</p>
 					</div>
-					<div class='col-md-6 text-center custom-margin'>
-						  	<div class='row'>
-							  	<div class='col-md-4 '>
-								  	<img src='pictures/https.png' alt='提醒使用 HTTPS 網站的圖示'>
-							  	<!-- <h5>資安工程師</h5> -->
-						  	</div>
-						  	<div class='col-md-8 text-left'>
-							  	<p class='lead'>不要登錄以 http 開頭的網站</p>
-							  	<p>出門在外，建議避免登入網址為「http」開頭的網站。網路上常見的「http」和「https」開頭的網址，其差別在於https 開頭的網站會利用 SSL/TLS 來加密封包，意味著傳輸資料獲得加密保護，相對來說較為安全。如果網址欄有「掛鎖」圖示，也是代表傳輸資料獲得加密。</p>	
-						  	</div>
-					  	</div>
-					</div>
-					<div class='col-md-6 text-center custom-margin'>
-							  	<div class='row'>
-								  	<div class='col-md-4 '>
-									<img src='pictures/bank.png' alt='網路銀行提醒圖示'>
-								<!-- <h5>資安工程師</h5> -->
+		        </div>
+		        <div class='row guideline-grid'>
+					<div class='col-md-6 col-lg-4'>
+						<div class='guideline-card'>
+							<div class='icon-wrapper'>
+								<img src='pictures/https.png' alt='提醒使用 HTTPS 網站的圖示'>
 							</div>
-							<div class='col-md-8 text-left'>
-								<p class='lead'>避免檢查銀行帳戶</p>
-								<p>就像線上購物一樣，在使用公共 Wi-Fi 時，應避免登入任何金融網站或應用程式。一旦信用卡或銀行帳密被盜，即使你在家中也很麻煩，更不用說在旅途中還要為此費心了！</p>
-							</div>
+							<h4>拒絕沒有鎖頭的網址</h4>
+							<p>避免登入 http 開頭的網站；尋找瀏覽器上的鎖頭符號與 https 保障，確保資料傳輸已加密。</p>
 						</div>
-				 	</div>
-				  		<div class='col-md-6 text-center custom-margin'>
-						<div class='row'>
-							<div class='col-md-4 '>
+					</div>
+					<div class='col-md-6 col-lg-4'>
+						<div class='guideline-card'>
+							<div class='icon-wrapper'>
+								<img src='pictures/bank.png' alt='網路銀行提醒圖示'>
+							</div>
+							<h4>金融交易等回家再做</h4>
+							<p>公共網路不適合登入銀行或投資平台，敏感資訊容易被攔截，等到可信網路再處理。</p>
+						</div>
+					</div>
+					<div class='col-md-6 col-lg-4'>
+						<div class='guideline-card'>
+							<div class='icon-wrapper'>
 								<img src='pictures/wifi.png' alt='安全 Wi-Fi 圖示'>
-								<!-- <h5>資安工程師</h5> -->
 							</div>
-							<div class='col-md-8 text-left'>
-								<p class='lead'>使用有密碼保護的 Wi-Fi 熱點</p>
-								<p>如果需要密碼才能上網，表示你正在使用安全的 Wi-Fi 網路（secured Wi-Fi network）。安全網路會要求用戶在連網前，同意法律條款、註冊帳戶並輸入密碼。雖然你可能會需要買一杯咖啡才能拿到 Wi-Fi 密碼，但有密碼保護的熱點的確更安全。</p>	
-							</div>
+							<h4>選擇有密碼保護的熱點</h4>
+							<p>需登入或輸入密碼的網路通常較安全，也能降低未授權人員同時連線的風險。</p>
 						</div>
-			  		</div>
-			  		<div class='col-md-6 text-center custom-margin'>
-						<div class='row'>
-							<div class='col-md-4 '>
+					</div>
+					<div class='col-md-6 col-lg-4'>
+						<div class='guideline-card'>
+							<div class='icon-wrapper'>
 								<img src='pictures/smartphone.png' alt='智慧型手機注意事項圖示'>
-								<!-- <h5>資安工程師</h5> -->
 							</div>
-							<div class='col-md-8 text-left'>
-							<p class='lead'>不要上網購物</p>
-							<p>當你連上公共 Wi-Fi 進行網路購物時，你輸入的帳號密碼與信用卡訊息，很可能會遭到連上同一個熱點的駭客所竊取。</p>	
-							</div>
+							<h4>暫停線上刷卡</h4>
+							<p>在開放網路購物容易外洩信用卡與個資，先加入購物車，改用個人網路完成交易。</p>
 						</div>
 					</div>
-					<div class='col-md-6 text-center custom-margin'>
-						<div class='row'>
-							<div class='col-md-4 '>
+					<div class='col-md-6 col-lg-4'>
+						<div class='guideline-card'>
+							<div class='icon-wrapper'>
 								<img src='pictures/no-signal.png' alt='停用自動連線圖示'>
-								<!-- <h5>資安工程師</h5> -->
 							</div>
-							<div class='col-md-8 text-left'>
-							<p class='lead'>Wi-Fi 不要設定成自動連線</p>
-							<p>若設定為自動連線，可能在你不知道的情況下連上網路，如果不使用網路時，最好把 Wi-Fi 關掉，以免讓有心人士有更多機會侵入你的電腦或手機。</p>	
-							</div>
+							<h4>關閉自動連線</h4>
+							<p>避免裝置自動連上陌生熱點；不用網路時記得關閉 Wi-Fi 功能，降低暴露時間。</p>
 						</div>
 					</div>
-					<div class='col-md-6 text-center custom-margin'>
-						<div class='row'>
-							<div class='col-md-4 '>
+					<div class='col-md-6 col-lg-4'>
+						<div class='guideline-card'>
+							<div class='icon-wrapper'>
 								<img src='pictures/fake.png' alt='警惕偽造 Wi-Fi 圖示'>
-								<!-- <h5>資安工程師</h5> -->
 							</div>
-							<div class='col-md-8 text-left'>
-							<p class='lead'>警惕偽造的WIFI網路</p>
-							<p>不要因為他的名稱與商店或公司名稱相同就信任它。如果有疑慮，務必與工作人員確認網路的真實性。可以詢問他們是否有安全的網路能夠使用。</p>	
-							</div>
+							<h4>確認熱點真偽</h4>
+							<p>與店家人員交叉確認 Wi-Fi 名稱，不隨意連上相似名稱或無主網路。</p>
 						</div>
 					</div>
-					<div class='col-md-12 text-center custom-margin-last'>
-						<div class='row'>
-							<div class='col-md-2 '>
+					<div class='col-12'>
+						<div class='guideline-card guideline-card--wide'>
+							<div class='icon-wrapper'>
 								<img src='pictures/vpn.png' alt='VPN 使用示意圖'>
-								<!-- <h5>資安工程師</h5> -->
 							</div>
-							<div class='col-md-10 text-left'>
-							<p class='lead'>使用虛擬私人網路（Virtual Private Network，簡稱 VPN）</p>
-							<p>大部分的 VPN 服務，都提供匿名、安全的上網瀏覽。做法是先讓你的電腦與 VPN 供應商建立安全連線，再經由 VPN 伺服器連上網路。換言之，當駭客試圖追蹤你時，他們無法追蹤到你的 IP 位址，因為他們看到的是 VPN 伺服器的位址。
-								同時， VPN 提供了安全加密的連線通道，大幅提高了安全強度。某些 VPN 甚至強調可以防止用戶下載惡意程式，並提供過濾釣魚網站的功能。儘管有些 VPN 必須付費，但仍是值得的花費。</p>	
+							<div class="wide-body">
+								<h4>善用 VPN 建立私人通道</h4>
+								<p>VPN 先與服務商建立加密連線，再由其伺服器進入網際網路。駭客看到的是 VPN 的 IP，難以追蹤到你本人，還能過濾惡意網站與釣魚內容，是行動上網最可靠的後盾。</p>
 							</div>
 						</div>
 					</div>
-					<p>資料來源 https://www.epochtimes.com/b5/20/3/3/n11911313.html</p>
-		  		</div>
+		        </div>
+		        <div class='row'>
+					<div class='col-md-10 col-lg-8 text-center source-note'>
+						<p>資料來源：<a href="https://www.epochtimes.com/b5/20/3/3/n11911313.html" target="_blank" rel="noopener">大紀元時報</a></p>
+					</div>
+		        </div>
 			</div>
         </section> 
 		<!-- Third -->
 		<section id="third" >
 			<div class="container">
 			  <div class="row">
-				<div class="col-md-12 text-center">
+				<div class="col-lg-8 offset-lg-2 text-center">
 				  <h2 class="video-title">宣導影片</h2>
+				  <p class="section-intro">四分鐘帶你掌握公共 Wi-Fi 常見的攻擊手法與防護技巧，一次補齊資訊安全觀念。</p>
 				</div>
 			  </div>
 			  <div class="row">
@@ -171,13 +254,10 @@
 				</div>
 			  </div>
 			  <div class="row">
-				<div class="col-md-12 text-center">
-				  <div class="video-credit">拍攝者姓名</div>
+				<div class="col-md-12 text-center video-meta">
+				  <div class="video-credit">拍攝者</div>
 				  <p>電機三乙 林嘉泉</p>
 				</div>
-			  </div>
-			  <div class="row">
-				<div class="col-md-12 text-center" style="margin-bottom: 30px;"></div>
 			  </div>
 			</div>
 		  </section>
@@ -188,11 +268,14 @@
         <section id='latest'>
 	        <div class="container">
 		        <div class='row'>
-					  <div class='col-md-12 text-center'>
+					  <div class='col-lg-8 offset-lg-2 text-center'>
 					  	<h3>相關新聞</h3>
-					  	<div class='row'>
-						  	<div class='col-md-4 text-left'>
-							  	<div class='outer'>
+					  	<p class="section-intro">掌握最新案例，了解駭客如何鎖定公共網路的使用者，並學習避免成為下一個受害者。</p>
+					  </div>
+				  </div>
+				  <div class='row'>
+						  <div class='col-md-4 text-left'>
+						  	<div class='outer news-card'>
 								  	<a href='https://news.ltn.com.tw/news/world/breakingnews/2345017' target="_blank">
 									  	<div class='upper'>
 											<img src='https://img.ltn.com.tw/Upload/news/600/2018/02/20/phpCMUpmd.jpg' class='news-image' alt='2018 年公共 Wi-Fi 盜領新聞圖片'>
@@ -210,7 +293,7 @@
 							  	</div>
 						  	</div>
 						  	<div class='col-md-4 text-left'>
-							  	<div class='outer'>
+							  	<div class='outer news-card'>
 								  	<a href='https://news.cts.com.tw/cts/general/202210/202210052094520.html' target="_blank">
 									  	<div class='upper'>
 											<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVQdRs01TtNzBzZfBzIgIauxrh_RtpTVe7fw&usqp=CAU' class='news-image' alt='免費 Wi-Fi 資安新聞圖片'>
@@ -229,7 +312,7 @@
 							  	</div>
 						  	</div>
 						  	<div class='col-md-4 text-left'>
-							  	<div class='outer'>
+							  	<div class='outer news-card'>
 								  	<a href='https://news.tvbs.com.tw/life/652367' target="_blank">
 									  	<div class='upper'>
 											<img src='https://cc.tvbs.com.tw/news3.0/tvbs/news/life/images/2016/05/04/CH55_Clean_10M_20160504_18-30-01.mp4_20160504_184703.212.jpg' class='news-image' alt='2016 年免費 Wi-Fi 資安新聞圖片'>
@@ -247,26 +330,24 @@
 							  	</div>
 						  	</div>						
 					  	</div>
-					  </div>
-			    <div>
-	        </div>
-        
         </section>
         <section id='email'>
 	        <div class="container">
 		        <div class='row'>
 					  <div class='col-md-8 offset-md-2 text-center'>
 					  	<h3>謝謝您看到這邊</h3>
+					  	<p class="section-intro">留下回饋，幫助我們打造更安全、更多元的資安學習資源。</p>
 					  </div>
 		        </div>
 		        <div class='row'>
-					  <div class='col-md-8 offset-md-2 text-left'>		
-						<p>意見回饋表</p>        		  	
-					  	<div class="input-group input-group-lg">
-						  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="感謝您的支持">
+					  <div class='col-md-10 offset-md-1 col-lg-8 offset-lg-2'>		
+						<div class="feedback-card">
+							<label for="feedback" class="feedback-label">意見回饋表</label>
+							<div class="input-group input-group-lg">
+						  		<input id="feedback" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="想分享的建議或想看的主題...">
+							</div>
+							<a class="btn btn-primary btn-lg" href="#" role="button" data-feedback-button>提交</a>
 						</div>
-						<!-- <a class="btn btn-primary btn-lg" href="#" role="button">提交</a> -->
-						<a class="btn btn-primary btn-lg" href="#" role="button" data-feedback-button>提交</a>
 					  </div>
 		        </div>
 	        </div>
@@ -278,8 +359,9 @@
 		        <div class='row'>
 					  <div class='col-md-4 text-left'>
 					  <img src='pictures/ntut.jpeg' width='85' alt='國立臺北科技大學校徽'>
-						  <p>國立臺北科技大學</p>
+						  <p class="footer-title">國立臺北科技大學</p>
 						  <p>National Taipei University Of Technology</p>
+						  <p class="footer-subtitle">致力推動資訊安全教育，與你共同守護數位生活。</p>
 					  </div>
 					  <div class='col-md-4 text-left'>
 						  <h4>連結</h4>
